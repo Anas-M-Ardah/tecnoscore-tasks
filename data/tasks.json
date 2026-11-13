@@ -85,7 +85,7 @@
         "ar": "تطبيق سطح المكتب (WPF)"
       },
       "owner": "anas",
-      "status": "todo",
+      "status": "in_progress",
       "priority": "medium",
       "due": "",
       "notes": "",
@@ -93,7 +93,7 @@
       "checklist": [],
       "comments": [],
       "createdAt": "2026-11-13T09:00:00.000Z",
-      "updatedAt": "2026-11-13T09:00:00.000Z"
+      "updatedAt": "2026-11-13T18:51:52.573Z"
     },
     {
       "id": "t-new-ui",
@@ -264,6 +264,15 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-11-13T18:51:52.005Z",
+      "who": "anas",
+      "action": "status",
+      "taskId": "t-wpf",
+      "detail": {
+        "status": "in_progress"
+      }
+    },
     {
       "at": "2026-11-13T18:51:42.217Z",
       "who": "anas",
