@@ -160,7 +160,7 @@
         "ar": "مصفوفة الصلاحيات"
       },
       "owner": "zaid",
-      "status": "in_progress",
+      "status": "todo",
       "priority": "high",
       "due": "",
       "notes": "",
@@ -186,7 +186,7 @@
       ],
       "comments": [],
       "createdAt": "2026-11-13T09:00:00.000Z",
-      "updatedAt": "2026-11-13T09:00:00.000Z"
+      "updatedAt": "2026-11-13T16:09:52.463Z"
     },
     {
       "id": "t-profiles",
@@ -264,6 +264,15 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-11-13T16:09:51.950Z",
+      "who": "anas",
+      "action": "status",
+      "taskId": "t-permissions",
+      "detail": {
+        "status": "todo"
+      }
+    },
     {
       "at": "2026-11-13T16:06:14.903Z",
       "who": "anas",
