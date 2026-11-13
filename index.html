@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TecnoScore · Task Desk</title>
+  <meta name="description" content="TecnoScore task desk for Anas & Zaid — bilingual (Arabic / English)." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1f23'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11' stroke='%23f2c14e' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M9 16.5l4.5 4.5L23 11" /></svg>
+      </span>
+      <div>
+        <div class="brand-name" data-i18n="brand"></div>
+        <div class="brand-sub" data-i18n="brandSub"></div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span class="sync" id="sync" data-state="idle"><span class="dot"></span><span class="sync-label"></span></span>
+      <button class="chip" id="whoBtn" type="button"></button>
+      <button class="chip lang" id="langBtn" type="button"></button>
+      <button class="icon-btn" id="settingsBtn" type="button" data-i18n-title="settings">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="readonly-banner" id="readonlyBanner" hidden>
+    <span data-i18n="readonly"></span>
+    <button class="link-btn" type="button" data-open-settings data-i18n="addToken"></button>
+  </div>
+
+  <main class="wrap">
+    <section class="hero" id="hero"></section>
+    <section class="brief" id="brief"></section>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab" role="tab" data-view="people" data-i18n="viewPeople"></button>
+      <button class="tab" role="tab" data-view="board" data-i18n="viewBoard"></button>
+      <button class="tab" role="tab" data-view="activity" data-i18n="viewActivity"></button>
+      <span class="tabs-spacer"></span>
+      <button class="btn primary" id="newTaskBtn" type="button">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        <span data-i18n="newTask"></span>
+      </button>
+    </nav>
+
+    <section id="view" class="view"></section>
+  </main>
+
+  <!-- Task drawer -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true"></aside>
+
+  <!-- Dialogs -->
+  <dialog id="settingsDlg" class="dlg"></dialog>
+  <dialog id="whoDlg" class="dlg small"></dialog>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

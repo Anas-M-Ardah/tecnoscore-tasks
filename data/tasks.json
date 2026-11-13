@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "plan": {
+    "title": { "en": "TecnoScore Delivery Plan", "ar": "خطة تسليم تكنوسكور" },
+    "start": "2026-11-13",
+    "target": "2027-01-01"
+  },
+  "people": [
+    { "id": "anas", "name": { "en": "Anas", "ar": "أنس" }, "color": "#0e7c6b" },
+    { "id": "zaid", "name": { "en": "Zaid", "ar": "زيد" }, "color": "#c4511f" }
+  ],
+  "tasks": [
+    {
+      "id": "t-staging",
+      "title": { "en": "Staging environment", "ar": "بيئة الاختبار (Staging)" },
+      "owner": "anas", "status": "todo", "priority": "high", "due": "",
+      "notes": "", "links": [], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-ratelimit",
+      "title": { "en": "Rate limiting", "ar": "تحديد معدّل الطلبات (Rate Limiting)" },
+      "owner": "anas", "status": "todo", "priority": "high", "due": "",
+      "notes": "", "links": [], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-courses-link",
+      "title": { "en": "Courses link", "ar": "رابط الدورات" },
+      "owner": "anas", "status": "todo", "priority": "medium", "due": "",
+      "notes": "", "links": [], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-wpf",
+      "title": { "en": "Desktop app (WPF)", "ar": "تطبيق سطح المكتب (WPF)" },
+      "owner": "anas", "status": "todo", "priority": "medium", "due": "",
+      "notes": "", "links": [], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-new-ui",
+      "title": { "en": "New UI/UX — home page & profiles", "ar": "واجهة وتجربة مستخدم جديدة — الصفحة الرئيسية والملفات الشخصية" },
+      "owner": "anas", "status": "todo", "priority": "high", "due": "",
+      "notes": "", "links": ["t-profiles", "t-menubar"], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-payments-plan",
+      "title": { "en": "PayPal & Stripe implementation plan with cost", "ar": "خطة تنفيذ PayPal و Stripe مع التكلفة" },
+      "owner": "anas", "status": "todo", "priority": "medium", "due": "",
+      "notes": "", "links": ["t-hide-store"], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-admin-cleanup",
+      "title": { "en": "Admin clean-up", "ar": "تنظيف لوحة الإدارة" },
+      "owner": "zaid", "status": "todo", "priority": "medium", "due": "",
+      "notes": "", "links": ["t-permissions"], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-permissions",
+      "title": { "en": "Permissions matrix", "ar": "مصفوفة الصلاحيات" },
+      "owner": "zaid", "status": "in_progress", "priority": "high", "due": "",
+      "notes": "", "links": ["t-admin-cleanup"],
+      "checklist": [
+        { "id": "c-perm-1", "text": "Plan written", "done": true },
+        { "id": "c-perm-2", "text": "Implement", "done": false },
+        { "id": "c-perm-3", "text": "Review with Anas", "done": false }
+      ],
+      "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-profiles",
+      "title": { "en": "Profiles", "ar": "الملفات الشخصية" },
+      "owner": "zaid", "status": "todo", "priority": "medium", "due": "",
+      "notes": "", "links": ["t-new-ui"], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-hide-store",
+      "title": { "en": "Hide the store", "ar": "إخفاء المتجر" },
+      "owner": "zaid", "status": "todo", "priority": "low", "due": "",
+      "notes": "", "links": ["t-payments-plan"], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-menubar",
+      "title": { "en": "Menu bar / top bar", "ar": "شريط القوائم / الشريط العلوي" },
+      "owner": "zaid", "status": "todo", "priority": "medium", "due": "",
+      "notes": "", "links": ["t-new-ui"], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "t-technopet",
+      "title": { "en": "Techno Pet integration", "ar": "دمج Techno Pet" },
+      "owner": "zaid", "status": "todo", "priority": "medium", "due": "",
+      "notes": "", "links": [], "checklist": [], "comments": [],
+      "createdAt": "2026-11-13T09:00:00.000Z", "updatedAt": "2026-11-13T09:00:00.000Z"
+    }
+  ],
+  "activity": [
+    { "at": "2026-11-13T09:00:00.000Z", "who": "anas", "action": "plan_created", "taskId": "", "detail": "" }
+  ]
+}
