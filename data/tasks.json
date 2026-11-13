@@ -51,7 +51,7 @@
         "ar": "تحديد معدّل الطلبات (Rate Limiting)"
       },
       "owner": "anas",
-      "status": "in_progress",
+      "status": "review",
       "priority": "high",
       "due": "",
       "notes": "",
@@ -59,7 +59,7 @@
       "checklist": [],
       "comments": [],
       "createdAt": "2026-11-13T09:00:00.000Z",
-      "updatedAt": "2026-11-13T16:06:15.412Z"
+      "updatedAt": "2026-11-13T18:51:29.838Z"
     },
     {
       "id": "t-courses-link",
@@ -264,6 +264,15 @@
     }
   ],
   "activity": [
+    {
+      "at": "2026-11-13T18:51:29.188Z",
+      "who": "anas",
+      "action": "status",
+      "taskId": "t-ratelimit",
+      "detail": {
+        "status": "review"
+      }
+    },
     {
       "at": "2026-11-13T16:09:51.950Z",
       "who": "anas",
